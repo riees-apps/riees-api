@@ -251,7 +251,7 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     onlyAllowOrigins: [
-      'https://riees-admin-api.herokuapp.com/'
+      'https://riees-admin-api.herokuapp.com'
     ],
 
 
