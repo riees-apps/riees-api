@@ -1,0 +1,39 @@
+{
+  "name": "riees-admin-api",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "app.js",
+  "scripts": {
+    "start": "NODE_ENV=production node app.js",
+    "test": "npm run lint && npm run custom-tests && echo 'Done.'",
+    "lint": "eslint . --max-warnings=0 --report-unused-disable-directives && echo '✔  Your .js files look good.'",
+    "custom-tests": "echo \"(No other custom tests yet.)\" && echo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riees-apps/riees-admin-api.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/riees-apps/riees-admin-api/issues"
+  },
+  "homepage": "https://github.com/riees-apps/riees-admin-api#readme",
+  "engines": {
+    "node": "^10.15"
+  },
+  "dependencies": {
+    "sails": "^1.2.1",
+    "grunt": "1.0.1",
+    "sails-hook-grunt": "^3.1.0",
+    "sails-hook-orm": "^2.1.1",
+    "sails-hook-sockets": "^1.5.5",
+    "@sailshq/connect-redis": "^3.2.1",
+    "@sailshq/socket.io-redis": "^5.2.0",
+    "@sailshq/lodash": "^3.10.3"
+  },
+  "devDependencies": {
+    "@sailshq/eslint": "^4.19.3"
+  }
+}
