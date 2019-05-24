@@ -1,6 +1,6 @@
 {
   "name": "riees-admin-api",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "description": "",
   "keywords": [],
   "main": "app.js",
