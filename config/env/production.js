@@ -72,6 +72,8 @@ module.exports = {
       ****************************************************************************/
       // ssl: true,
 
+      adapter: require('sails-mongo'),
+      url: process.env.DB_STRING_CONNECTION
     },
 
   },

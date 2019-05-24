@@ -21,6 +21,8 @@ module.exports.routes = {
 
   '/': { view: 'pages/homepage' },
 
+  'post /admin/auth': 'AdminController.auth',
+
 
   /***************************************************************************
   *                                                                          *

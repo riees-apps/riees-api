@@ -1,11 +1,13 @@
 {
   "name": "riees-admin-api",
-  "version": "0.0.0",
+  "version": "0.10.0",
   "description": "",
   "keywords": [],
   "main": "app.js",
   "scripts": {
-    "start": "NODE_ENV=production node app.js",
+    "start": "NODE_ENV=development node app.js",
+    "prod": "NODE_ENV=production node app.js",
+    "local": "cross-env DB_STRING_CONNECTION=mongodb://localhost:27017/riees NODE_ENV=development node app.js",
     "test": "npm run lint && npm run custom-tests && echo 'Done.'",
     "lint": "eslint . --max-warnings=0 --report-unused-disable-directives && echo '✔  Your .js files look good.'",
     "custom-tests": "echo \"(No other custom tests yet.)\" && echo"
@@ -24,16 +26,18 @@
     "node": "^10.15"
   },
   "dependencies": {
-    "sails": "^1.2.1",
+    "@sailshq/connect-redis": "^3.2.1",
+    "@sailshq/lodash": "^3.10.3",
+    "@sailshq/socket.io-redis": "^5.2.0",
     "grunt": "1.0.1",
+    "sails": "^1.2.1",
     "sails-hook-grunt": "^3.1.0",
     "sails-hook-orm": "^2.1.1",
     "sails-hook-sockets": "^1.5.5",
-    "@sailshq/connect-redis": "^3.2.1",
-    "@sailshq/socket.io-redis": "^5.2.0",
-    "@sailshq/lodash": "^3.10.3"
+    "sails-mongo": "^1.0.1"
   },
   "devDependencies": {
-    "@sailshq/eslint": "^4.19.3"
+    "@sailshq/eslint": "^4.19.3",
+    "cross-env": "^5.2.0"
   }
 }
