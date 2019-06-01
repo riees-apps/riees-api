@@ -1,6 +1,6 @@
 {
-  "name": "riees-admin-api",
-  "version": "0.10.1",
+  "name": "riees-api",
+  "version": "0.10.2",
   "description": "",
   "keywords": [],
   "main": "app.js",
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/riees-apps/riees-admin-api.git"
+    "url": "git+https://github.com/riees-apps/riees-api.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/riees-apps/riees-admin-api/issues"
+    "url": "https://github.com/riees-apps/riees-api/issues"
   },
-  "homepage": "https://github.com/riees-apps/riees-admin-api#readme",
+  "homepage": "https://github.com/riees-apps/riees-api#readme",
   "engines": {
     "node": "^10.15"
   },
