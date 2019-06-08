@@ -22,6 +22,7 @@ module.exports.routes = {
   '/': { view: 'pages/homepage' },
 
   'post /admin/auth': 'AdminController.auth',
+  'get /static/:locale': 'StaticController.static'
 
 
   /***************************************************************************
