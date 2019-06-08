@@ -6,20 +6,9 @@
  */
 
 module.exports = {
-    destroy: async function(req, res) {
-        let admin = await Admin.updateOne({ id: req.params.id }).set({
-            deletedAt: Date.now()
-        });
-
-        if (!admin) {
-            res.status(404).type('text/plain').send('Not Found');
-        }
-        else {
-            res.json(admin);
-        }
-    },
+    destroy: require('./../utils/destroy')(Admin),
     auth: async function(req, res) {
-        let requiredPaths = [ 'email', 'password' ];
+        let requiredPaths = [ 'email', 'senha' ];
         let message = '';
 
         requiredPaths.forEach(path => {
@@ -37,7 +26,7 @@ module.exports = {
                 deletedAt: 0
             });
 
-            if (admin && (admin.password == req.body.password)) {
+            if (admin && (admin.senha == req.body.senha)) {
                 res.json(admin);
             }
             else {

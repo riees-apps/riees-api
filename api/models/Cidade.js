@@ -1,5 +1,5 @@
 /**
- * Instituicao.js
+ * Cidade.js
  *
  * @description :: A model definition represents a database table/collection.
  * @docs        :: https://sailsjs.com/docs/concepts/models-and-orm/models
@@ -12,34 +12,27 @@ module.exports = {
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
-    nome: {
+
+    name: {
       type: 'string',
       minLength: 8,
       maxLength: 64,
       required: true,
-      example: 'Universidade Vila Velha'
+      unique: true,
+      example: 'Vila Velha'
     },
-    missao: {
+    description: {
       type: 'string',
-      minLength: 8,
-      maxLength: 128,
-      required: true,
-      example: 'Missao da Instituição'
-    },
-    descricao: {
-      type: 'string',
-      minLength: 8,
+      minLength: 256,
       maxLength: 512,
       required: true,
-      example: 'Descrição da Instituição'
+      example: 'A cidade dos canelas verdes'
     },
-    pontosFortes: {
-      type: 'string',
-      minLength: 8,
-      maxLength: 16,
+    avarageCost: {
+      type: 'number',
       required: true,
-      example: 'Pontos Fortes da Instituição'
-    },
+      example: '2000.00'
+    }
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
@@ -49,11 +42,6 @@ module.exports = {
     //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
-
-    unidades: {
-      collection: 'unidade',
-      via: 'instituicao'
-    },
 
   },
 

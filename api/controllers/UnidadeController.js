@@ -6,17 +6,6 @@
  */
 
 module.exports = {
-    destroy: async function(req, res) {
-        let unidade = await Unidade.updateOne({ id: req.params.id }).set({
-            deletedAt: Date.now()
-        });
-
-        if (!unidade) {
-            res.status(404).type('text/plain').send('Not Found');
-        }
-        else {
-            res.json(unidade);
-        }
-    },
+    destroy: require('./../utils/destroy')(Unidade),
 };
 

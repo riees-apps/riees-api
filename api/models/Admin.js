@@ -13,7 +13,7 @@ module.exports = {
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
 
-    name: {
+    nome: {
       type: 'string',
       minLength: 8,
       maxLength: 64,
@@ -29,7 +29,7 @@ module.exports = {
       isEmail: true,
       example: 'fulano.admin@riees.org'
     },
-    password: {
+    senha: {
       type: 'string',
       minLength: 8,
       maxLength: 16,
