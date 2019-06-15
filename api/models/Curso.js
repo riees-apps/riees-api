@@ -1,5 +1,5 @@
 /**
- * Evento.js
+ * Curso.js
  *
  * @description :: A model definition represents a database table/collection.
  * @docs        :: https://sailsjs.com/docs/concepts/models-and-orm/models
@@ -18,30 +18,11 @@ module.exports = {
       minLength: 8,
       maxLength: 64,
       required: true,
-      example: 'Nome do Evento'
+      example: 'Ciência da Computação'
     },
-    descricao: {
-      type: 'string',
-      minLength: 8,
-      maxLength: 512,
-      required: true,
-      example: 'Descrição do Evento'
-    },
-    dataInicio: {
-      type: 'number',
-      required: true,
-      example: 'Data de Início em Timestamp'
-    },
-    dataFim: {
-      type: 'number',
-      required: true,
-      example: 'Data de Fim em Timestamp'
-    },
-    link: {
-      type: 'string',
-      minLength: 8,
-      maxLength: 256,
-      example: 'O link para inscrição no Evento'
+    niveis: {
+      type: 'json',
+      defaultsTo: []
     },
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
@@ -52,6 +33,13 @@ module.exports = {
     //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
+
+    unidade: {
+      model: 'unidade'
+    },
+    area: {
+      model: 'area'
+    },
 
   },
 

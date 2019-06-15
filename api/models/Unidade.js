@@ -89,6 +89,10 @@ module.exports = {
     instituicao: {
       model: 'instituicao'
     },
+    cursos: {
+      collection: 'curso',
+      via: 'unidade'
+    }
 
   },
 

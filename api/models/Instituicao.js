@@ -34,10 +34,8 @@ module.exports = {
       example: 'Descrição da Instituição'
     },
     pontosFortes: {
-      type: 'string',
-      minLength: 8,
-      maxLength: 16,
-      required: true,
+      type: 'json',
+      defaultsTo: [],
       example: 'Pontos Fortes da Instituição'
     },
 

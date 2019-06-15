@@ -13,7 +13,7 @@ module.exports = {
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
 
-    name: {
+    nome: {
       type: 'string',
       minLength: 8,
       maxLength: 64,
@@ -21,14 +21,14 @@ module.exports = {
       unique: true,
       example: 'Vila Velha'
     },
-    description: {
+    descricao: {
       type: 'string',
       minLength: 256,
       maxLength: 512,
       required: true,
       example: 'A cidade dos canelas verdes'
     },
-    avarageCost: {
+    custoMedio: {
       type: 'number',
       required: true,
       example: '2000.00'
