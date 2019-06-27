@@ -15,15 +15,11 @@ module.exports = {
 
     nome: {
       type: 'string',
-      minLength: 8,
-      maxLength: 64,
       required: true,
       example: 'Fulano Administrador do Sistema'
     },
     email: {
       type: 'string',
-      minLength: 8,
-      maxLength: 128,
       required: true,
       unique: true,
       isEmail: true,
@@ -31,8 +27,6 @@ module.exports = {
     },
     senha: {
       type: 'string',
-      minLength: 8,
-      maxLength: 16,
       required: true,
       example: 'fulano123'
     }

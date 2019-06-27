@@ -15,16 +15,12 @@ module.exports = {
 
     nome: {
       type: 'string',
-      minLength: 8,
-      maxLength: 64,
       required: true,
       unique: true,
       example: 'Vila Velha'
     },
     descricao: {
       type: 'string',
-      minLength: 256,
-      maxLength: 512,
       required: true,
       example: 'A cidade dos canelas verdes'
     },

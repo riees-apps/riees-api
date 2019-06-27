@@ -14,29 +14,23 @@ module.exports = {
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
     nome: {
       type: 'string',
-      minLength: 8,
-      maxLength: 64,
       required: true,
       example: 'Universidade Vila Velha'
     },
     missao: {
       type: 'string',
-      minLength: 8,
-      maxLength: 128,
       required: true,
       example: 'Missao da Instituição'
     },
     descricao: {
       type: 'string',
-      minLength: 8,
-      maxLength: 512,
       required: true,
       example: 'Descrição da Instituição'
     },
     pontosFortes: {
       type: 'json',
       defaultsTo: [],
-      example: 'Pontos Fortes da Instituição'
+      example: '[ "Mercado de Trabalho", "Pesquisa" ... ]'
     },
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗

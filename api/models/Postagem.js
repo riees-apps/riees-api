@@ -14,38 +14,28 @@ module.exports = {
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
     titulo: {
       type: 'string',
-      minLength: 12,
-      maxLength: 50,
       required: true,
       example: 'Titulo da Publicação'
     },
     resumo: {
       type: 'string',
-      minLength: 20,
-      maxLength: 300,
       required: true,
       example: 'resumo da publicação'
     },
-    datahora: {
-      type: 'string',
-      minLength: 18,
-      maxLength: 19,
+    data: {
+      type: 'number',
       required: true,
-      example: 'mm/dd/yyyy hh:mm:ss'
+      example: 'Timestamp da Postagem.'
     },
     conteudo: {
       type: 'string',
-      minLength: 300,
-      maxLength: 600,
       required: true,
-      example: 'exemplo de conteudo'
+      example: 'Essa postagem no Blog é referente a algo que vai acontecer...'
     },
     tags: {
-      type: 'string',
-      minLength: 20,
-      maxLength: 50,
-      required: true,
-      example: '#exemplo'
+      type: 'json',
+      defaultsTo: [],
+      example: '[ "Cultura", "Sociedade", ... ]'
     }
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗

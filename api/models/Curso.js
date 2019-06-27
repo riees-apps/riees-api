@@ -15,14 +15,13 @@ module.exports = {
 
     nome: {
       type: 'string',
-      minLength: 8,
-      maxLength: 64,
       required: true,
       example: 'Ciência da Computação'
     },
     niveis: {
       type: 'json',
-      defaultsTo: []
+      defaultsTo: [],
+      example: '[ "Graduação", "Pos-Graduação", ... ]'
     },
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗

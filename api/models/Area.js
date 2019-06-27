@@ -15,8 +15,6 @@ module.exports = {
 
     nome: {
       type: 'string',
-      minLength: 8,
-      maxLength: 64,
       required: true,
       example: 'Ciências Exatas'
     },

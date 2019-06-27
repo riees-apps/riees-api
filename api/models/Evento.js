@@ -15,15 +15,11 @@ module.exports = {
 
     nome: {
       type: 'string',
-      minLength: 8,
-      maxLength: 64,
       required: true,
       example: 'Nome do Evento'
     },
     descricao: {
       type: 'string',
-      minLength: 8,
-      maxLength: 512,
       required: true,
       example: 'Descrição do Evento'
     },
@@ -39,8 +35,6 @@ module.exports = {
     },
     link: {
       type: 'string',
-      minLength: 8,
-      maxLength: 256,
       example: 'O link para inscrição no Evento'
     },
 
