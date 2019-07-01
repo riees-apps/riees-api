@@ -32,6 +32,10 @@ module.exports = {
       collection: 'curso',
       via: 'area'
     },
+    admin: {
+      model: 'admin',
+      required: true
+    },
 
   },
 

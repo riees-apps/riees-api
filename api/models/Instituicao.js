@@ -46,6 +46,10 @@ module.exports = {
       collection: 'unidade',
       via: 'instituicao'
     },
+    admin: {
+      model: 'admin',
+      required: true
+    },
 
   },
 

@@ -39,6 +39,10 @@ module.exports = {
     area: {
       model: 'area'
     },
+    admin: {
+      model: 'admin',
+      required: true
+    },
 
   },
 

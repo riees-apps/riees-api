@@ -6,7 +6,6 @@
  */
 
 module.exports = {
-  
-
+    destroy: require('./../utils/destroy')(Area),
 };
 

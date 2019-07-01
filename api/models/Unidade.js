@@ -74,7 +74,11 @@ module.exports = {
     cursos: {
       collection: 'curso',
       via: 'unidade'
-    }
+    },
+    admin: {
+      model: 'admin',
+      required: true
+    },
 
   },
 
