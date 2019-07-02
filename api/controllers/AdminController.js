@@ -12,8 +12,8 @@ module.exports = {
         let message = '';
 
         requiredPaths.forEach(path => {
-            if (! path in req.body) {
-                message += `É necessário a inclusão do ${path} no body.\n`;
+            if (! (path in req.body)) {
+                message += `É necessário a inclusão do campo '${path}' no body.\n`;
             }
         });
 
