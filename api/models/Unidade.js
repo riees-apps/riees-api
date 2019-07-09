@@ -28,7 +28,7 @@ module.exports = {
       required: true,
       example: 'Descrição dessa Unidade'
     },
-    rua: {
+    logradouro: {
       type: 'string',
       required: true,
       example: 'Rua da Lama'
