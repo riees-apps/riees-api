@@ -30,8 +30,8 @@ module.exports = {
         let file = await UploadedFile.findOne(req.param('id'));
 
         if (file) {
-            res.set('Content-disposition', `attachment; filename="${file.filename}"`);
-            res.set('filename', file.filename);
+            // res.set('Content-disposition', `attachment; filename="${file.filename}"`);
+            res.set('Filename', file.filename);
             grid.read(req.param('id'))
             .on('error', (err) => {
                 return res.serverError(err);
