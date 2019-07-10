@@ -9,10 +9,10 @@ module.exports = {
     create: function (req, res) {
         req.file('files').upload({
             adapter: require('skipper-gridfs'),
-            uri: process.env.MONGODB_URL
+            uri: process.env.DB_STRING_CONNECTION
         }, (err, uploadedFiles) => {
             if (err) {
-                return res.negotiate(err);
+                return res.serverError(err);
             }
             else {
                 return res.json({
@@ -24,7 +24,7 @@ module.exports = {
     },
     streamById: async function (req, res) {
         let grid = require('skipper-gridfs')({
-            uri: process.env.MONGODB_URL
+            uri: process.env.DB_STRING_CONNECTION
         });
 
         let file = await UploadedFile.findOne(req.param('id'));
@@ -44,7 +44,7 @@ module.exports = {
     },
     removeById: async function (req, res) {
         let grid = require('skipper-gridfs')({
-            uri: process.env.MONGODB_URL
+            uri: process.env.DB_STRING_CONNECTION
         });
 
         let file = await UploadedFile.findOne(req.param('id'));
