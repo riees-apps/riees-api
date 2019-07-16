@@ -32,6 +32,10 @@ module.exports = {
       defaultsTo: [],
       example: '[ "Mercado de Trabalho", "Pesquisa" ... ]'
     },
+    link: {
+      type: 'string',
+      example: 'O link do site da Instituição',
+    },
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
@@ -42,6 +46,12 @@ module.exports = {
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
 
+    capa: {
+      model: 'uploadedfile'
+    },
+    logo: {
+      model: 'uploadedfile'
+    },
     unidades: {
       collection: 'unidade',
       via: 'instituicao'

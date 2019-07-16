@@ -9,7 +9,7 @@ module.exports = {
     create: function (req, res) {
         req.file('files').upload({
             adapter: require('skipper-gridfs'),
-            uri: process.env.DB_STRING_CONNECTION
+            uri: sails.config.datastores.default.url
         }, (err, uploadedFiles) => {
             if (err) {
                 return res.serverError(err);
@@ -24,7 +24,7 @@ module.exports = {
     },
     streamById: async function (req, res) {
         let grid = require('skipper-gridfs')({
-            uri: process.env.DB_STRING_CONNECTION
+            uri: sails.config.datastores.default.url
         });
 
         let file = await UploadedFile.findOne(req.param('id'));
@@ -44,7 +44,7 @@ module.exports = {
     },
     removeById: async function (req, res) {
         let grid = require('skipper-gridfs')({
-            uri: process.env.DB_STRING_CONNECTION
+            uri: sails.config.datastores.default.url
         });
 
         let file = await UploadedFile.findOne(req.param('id'));
