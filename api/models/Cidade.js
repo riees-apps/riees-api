@@ -35,7 +35,7 @@ module.exports = {
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
 
     pontos: {
-      collection: 'pontos',
+      collection: 'ponto',
       via: 'cidade'
     },
     admin: {
