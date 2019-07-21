@@ -1,5 +1,5 @@
 /**
- * Evento.js
+ * Pontos.js
  *
  * @description :: A model definition represents a database table/collection.
  * @docs        :: https://sailsjs.com/docs/concepts/models-and-orm/models
@@ -16,27 +16,15 @@ module.exports = {
     nome: {
       type: 'string',
       required: true,
-      example: 'Nome do Evento'
+      unique: true,
+      example: 'Convento da Penha'
     },
     descricao: {
       type: 'string',
       required: true,
-      example: 'Descrição do Evento'
+      example: 'Fica no alto de um morro do lado do Morro do Moreno'
     },
-    localizacao: {
-      type: 'string',
-      required: true,
-      example: 'Localização do Evento, onde será feito'
-    },
-    data: {
-      type: 'number',
-      required: true,
-      example: 'Data de Início em Timestamp'
-    },
-    link: {
-      type: 'string',
-      example: 'O link para inscrição no Evento'
-    },
+
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
@@ -47,6 +35,9 @@ module.exports = {
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
 
+    cidade: {
+      model: 'cidade'
+    },
     admin: {
       model: 'admin',
       required: true

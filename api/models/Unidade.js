@@ -48,11 +48,6 @@ module.exports = {
       required: true,
       example: 'Jockey de Itaparica'
     },
-    cidade: {
-      type: 'string',
-      required: true,
-      example: 'Vila Velha'
-    },
     cep: {
       type: 'string',
       required: true,
@@ -68,6 +63,10 @@ module.exports = {
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
 
+    cidade: {
+      model: 'cidade',
+      required: true
+    },
     instituicao: {
       model: 'instituicao'
     },

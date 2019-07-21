@@ -24,11 +24,6 @@ module.exports = {
       required: true,
       example: 'A cidade dos canelas verdes'
     },
-    custoMedio: {
-      type: 'number',
-      required: true,
-      example: '2000.00'
-    },
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
@@ -39,6 +34,10 @@ module.exports = {
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
 
+    pontos: {
+      collection: 'pontos',
+      via: 'cidade'
+    },
     admin: {
       model: 'admin',
       required: true
