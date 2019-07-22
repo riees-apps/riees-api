@@ -25,7 +25,6 @@ module.exports = {
     },
     localizacao: {
       type: 'string',
-      required: true,
       example: 'Localização do Evento, onde será feito'
     },
     data: {
@@ -47,6 +46,9 @@ module.exports = {
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
 
+    capa: {
+      model: 'uploadedfile'
+    },
     admin: {
       model: 'admin',
       required: true

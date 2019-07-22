@@ -34,6 +34,9 @@ module.exports = {
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
 
+    capa: {
+      model: 'uploadedfile'
+    },
     pontos: {
       collection: 'ponto',
       via: 'cidade'
