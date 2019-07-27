@@ -23,9 +23,6 @@ module.exports.routes = {
 
   'post /admin/auth': 'AdminController.auth',
   'get /static/:locale': 'StaticController.static',
-  'get r|^/uploadedfile/([a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}\.(png|jpg|jpeg))|id': 'UploadedFileController.streamById',
-  'delete r|^/uploadedfile/([a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}\.(png|jpg|jpeg))|id': 'UploadedFileController.removeById',
-
 
   /***************************************************************************
   *                                                                          *

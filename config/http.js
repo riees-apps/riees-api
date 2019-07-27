@@ -9,6 +9,8 @@
  * https://sailsjs.com/config/http
  */
 
+const bodyParser = require('body-parser');
+
 module.exports.http = {
 
   /****************************************************************************
@@ -29,16 +31,17 @@ module.exports.http = {
     *                                                                          *
     ***************************************************************************/
 
-    // order: [
-    //   'cookieParser',
-    //   'session',
-    //   'bodyParser',
-    //   'compress',
-    //   'poweredBy',
-    //   'router',
-    //   'www',
-    //   'favicon',
-    // ],
+    order: [
+      'cookieParser',
+      'session',
+      'bodyParser',
+      'urlencoded',
+      'compress',
+      'poweredBy',
+      'router',
+      'www',
+      'favicon',
+    ],
 
 
     /***************************************************************************
@@ -49,6 +52,8 @@ module.exports.http = {
     *                                                                          *
     ***************************************************************************/
 
+    bodyParser: bodyParser.json(),
+    urlencoded: bodyParser.urlencoded({ extended: true }),
     // bodyParser: (function _configureBodyParser(){
     //   var skipper = require('skipper');
     //   var middlewareFn = skipper({ strict: true });

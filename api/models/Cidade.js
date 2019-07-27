@@ -35,7 +35,7 @@ module.exports = {
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
 
     capa: {
-      model: 'uploadedfile'
+      model: 'bucket'
     },
     pontos: {
       collection: 'ponto',

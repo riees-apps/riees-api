@@ -48,7 +48,7 @@ module.exports = {
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
 
     capa: {
-      model: 'uploadedfile'
+      model: 'bucket'
     },
     admin: {
       model: 'admin',

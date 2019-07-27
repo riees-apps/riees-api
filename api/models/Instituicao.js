@@ -47,10 +47,10 @@ module.exports = {
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
 
     capa: {
-      model: 'uploadedfile'
+      model: 'bucket'
     },
     logo: {
-      model: 'uploadedfile'
+      model: 'bucket'
     },
     unidades: {
       collection: 'unidade',
