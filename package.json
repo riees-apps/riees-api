@@ -1,6 +1,6 @@
 {
   "name": "riees-api",
-  "version": "0.64.0",
+  "version": "0.64.1",
   "description": "",
   "keywords": [],
   "main": "app.js",
@@ -30,7 +30,7 @@
     "@sailshq/lodash": "^3.10.3",
     "@sailshq/socket.io-redis": "^5.2.0",
     "body-parser": "^1.19.0",
-    "gridfs-bucket": "0.0.0",
+    "gridfs-bucket": "^0.5.1",
     "grunt": "1.0.1",
     "sails": "^1.2.2",
     "sails-hook-grunt": "^3.1.0",
