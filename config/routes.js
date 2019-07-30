@@ -23,6 +23,11 @@ module.exports.routes = {
 
   'post /admin/auth': 'AdminController.auth',
   'get /static/:locale': 'StaticController.static',
+  
+  'post /bucket': 'BucketController.create',
+  'get /bucket': 'BucketController.list',
+  'get /bucket/:id': 'BucketController.findOne',
+  'delete /bucket/:id': 'BucketController.destroy',
 
   /***************************************************************************
   *                                                                          *

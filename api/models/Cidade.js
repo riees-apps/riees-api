@@ -35,7 +35,7 @@ module.exports = {
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
 
     capa: {
-      model: 'bucket'
+      type: 'string'
     },
     pontos: {
       collection: 'ponto',
