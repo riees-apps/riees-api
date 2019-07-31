@@ -12,6 +12,7 @@ module.exports = {
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
+
     nome: {
       type: 'string',
       required: true,
@@ -32,9 +33,30 @@ module.exports = {
       defaultsTo: [],
       example: '[ "Mercado de Trabalho", "Pesquisa" ... ]'
     },
-    link: {
+    telefone: {
       type: 'string',
-      example: 'O link do site da Instituição',
+      required: true,
+      example: '27998776655'
+    },
+    telefone2: {
+      type: 'string',
+      example: '27998776655'
+    },
+    facebook: {
+      type: 'string',
+      example: 'http://www.facebook.com/UVV'
+    },
+    twitter: {
+      type: 'string',
+      example: 'http://www.twitter.com/UVV'
+    },
+    instagram: {
+      type: 'string',
+      example: 'http://www.instagram.com/UVV'
+    },
+    linkedin: {
+      type: 'string',
+      example: 'http://www.linkedin.com/UVV'
     },
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
@@ -54,6 +76,10 @@ module.exports = {
     },
     unidades: {
       collection: 'unidade',
+      via: 'instituicao'
+    },
+    cursos: {
+      collection: 'curso',
       via: 'instituicao'
     },
     admin: {

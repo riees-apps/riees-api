@@ -6,6 +6,6 @@
  */
 
 module.exports = {
-    destroy: require('./../utils/destroy')(Postagem),
+    destroy: require('../utils/destroy')(Publicacao),
 };
 

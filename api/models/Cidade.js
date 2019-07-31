@@ -16,7 +16,6 @@ module.exports = {
     nome: {
       type: 'string',
       required: true,
-      unique: true,
       example: 'Vila Velha'
     },
     descricao: {
@@ -36,6 +35,10 @@ module.exports = {
 
     capa: {
       type: 'string'
+    },
+    unidades: {
+      collection: 'unidade',
+      via: 'cidade'
     },
     pontos: {
       collection: 'ponto',

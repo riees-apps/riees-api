@@ -18,10 +18,30 @@ module.exports = {
       required: true,
       example: 'Ciência da Computação'
     },
-    niveis: {
-      type: 'json',
-      defaultsTo: [],
-      example: '[ "Graduação", "Pos-Graduação", ... ]'
+    nivel: {
+      type: 'string',
+      required: true,
+      isIn: [
+        'Graduação',
+        'Pós-graduação lato sensu',
+        'Pós-graduação stricto sensu'
+      ],
+      example: 'Graduação'
+    },
+    area: {
+      type: 'string',
+      required: true,
+      isIn: [
+        'Ciências Exatas e da Terra',
+        'Ciências Biológicas',
+        'Engenharias',
+        'Ciências da Saude',
+        'Ciências Agrárias',
+        'Ciências Sociais e Aplicadas',
+        'Ciências Humanas',
+        'Liguística, Letras e Artes'
+      ],
+      example: 'Ciências Exatas e da Terra'
     },
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
@@ -33,11 +53,8 @@ module.exports = {
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
 
-    unidade: {
-      model: 'unidade'
-    },
-    area: {
-      model: 'area'
+    instituicao: {
+      model: 'instituicao'
     },
     admin: {
       model: 'admin',

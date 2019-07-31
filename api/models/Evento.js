@@ -27,9 +27,13 @@ module.exports = {
       type: 'string',
       example: 'Localização do Evento, onde será feito'
     },
-    data: {
+    dataInicio: {
       type: 'number',
       required: true,
+      example: 'Data de Início em Timestamp'
+    },
+    dataFim: {
+      type: 'number',
       example: 'Data de Início em Timestamp'
     },
     link: {

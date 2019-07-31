@@ -16,7 +16,6 @@ module.exports = {
     nome: {
       type: 'string',
       required: true,
-      unique: true,
       example: 'Convento da Penha'
     },
     descricao: {
@@ -35,6 +34,9 @@ module.exports = {
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
 
+    capa: {
+      type: 'string'
+    },
     cidade: {
       model: 'cidade'
     },
