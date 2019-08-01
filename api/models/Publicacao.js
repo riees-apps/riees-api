@@ -19,6 +19,7 @@ module.exports = {
     },
     resumo: {
       type: 'string',
+      allowNull: true,
       example: 'Resumo da Publicação'
     },
     data: {
@@ -47,7 +48,8 @@ module.exports = {
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
 
     capa: {
-      type: 'string'
+      type: 'string',
+      allowNull: true
     },
     admin: {
       model: 'admin',

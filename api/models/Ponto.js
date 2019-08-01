@@ -35,7 +35,8 @@ module.exports = {
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
 
     capa: {
-      type: 'string'
+      type: 'string',
+      allowNull: true
     },
     cidade: {
       model: 'cidade'

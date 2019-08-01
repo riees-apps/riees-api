@@ -25,6 +25,7 @@ module.exports = {
     },
     localizacao: {
       type: 'string',
+      allowNull: true,
       example: 'Localização do Evento, onde será feito'
     },
     dataInicio: {
@@ -38,6 +39,7 @@ module.exports = {
     },
     link: {
       type: 'string',
+      allowNull: true,
       example: 'O link para inscrição no Evento'
     },
 
@@ -51,7 +53,8 @@ module.exports = {
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
 
     capa: {
-      type: 'string'
+      type: 'string',
+      allowNull: true
     },
     admin: {
       model: 'admin',

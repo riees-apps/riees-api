@@ -34,7 +34,8 @@ module.exports = {
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
 
     capa: {
-      type: 'string'
+      type: 'string',
+      allowNull: true
     },
     unidades: {
       collection: 'unidade',

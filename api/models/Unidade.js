@@ -20,22 +20,27 @@ module.exports = {
     },
     logradouro: {
       type: 'string',
+      allowNull: true,
       example: 'Rua da Lama'
     },
     numero: {
       type: 'string',
+      allowNull: true,
       example: 'Sem Número'
     },
     complemento: {
       type: 'string',
+      allowNull: true,
       example: 'Perto da esquina'
     },
     bairro: {
       type: 'string',
+      allowNull: true,
       example: 'Jockey de Itaparica'
     },
     cep: {
       type: 'string',
+      allowNull: true,
       example: '29103880'
     },
 

@@ -40,23 +40,33 @@ module.exports = {
     },
     telefone2: {
       type: 'string',
+      allowNull: true,
       example: '27998776655'
     },
     facebook: {
       type: 'string',
+      allowNull: true,
       example: 'http://www.facebook.com/UVV'
     },
     twitter: {
       type: 'string',
+      allowNull: true,
       example: 'http://www.twitter.com/UVV'
     },
     instagram: {
       type: 'string',
+      allowNull: true,
       example: 'http://www.instagram.com/UVV'
     },
     linkedin: {
       type: 'string',
+      allowNull: true,
       example: 'http://www.linkedin.com/UVV'
+    },
+    site: {
+      type: 'string',
+      allowNull: true,
+      example: 'www.uvv.br'
     },
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
@@ -69,10 +79,12 @@ module.exports = {
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
 
     capa: {
-      type: 'string'
+      type: 'string',
+      allowNull: true
     },
     logo: {
-      type: 'string'
+      type: 'string',
+      allowNull: true
     },
     unidades: {
       collection: 'unidade',
