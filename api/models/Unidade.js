@@ -25,13 +25,8 @@ module.exports = {
     },
     numero: {
       type: 'string',
-      allowNull: true,
+      defaultsTo: 'S/N',
       example: 'Sem Número'
-    },
-    complemento: {
-      type: 'string',
-      allowNull: true,
-      example: 'Perto da esquina'
     },
     bairro: {
       type: 'string',

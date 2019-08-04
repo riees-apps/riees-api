@@ -33,6 +33,13 @@ module.exports = {
       defaultsTo: [],
       example: '[ "Mercado de Trabalho", "Pesquisa" ... ]'
     },
+    email: {
+      type: 'string',
+      required: true,
+      unique: true,
+      isEmail: true,
+      example: 'fulano.example@uvv.br'
+    },
     telefone: {
       type: 'string',
       required: true,
