@@ -38,6 +38,21 @@ module.exports = {
       allowNull: true,
       example: '29103880'
     },
+    complemento: {
+      type: 'string',
+      allowNull: true,
+      example: 'Perto da Esquina'
+    },
+    latitude: {
+      type: 'number',
+      allowNull: true,
+      example: -20.353103
+    },
+    longitude: {
+      type: 'number',
+      allowNull: true,
+      example: -40.3022784
+    },
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
