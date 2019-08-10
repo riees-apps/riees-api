@@ -44,12 +44,12 @@ module.exports = {
       example: 'Perto da Esquina'
     },
     latitude: {
-      type: 'number',
+      type: 'string',
       allowNull: true,
       example: -20.353103
     },
     longitude: {
-      type: 'number',
+      type: 'string',
       allowNull: true,
       example: -40.3022784
     },
